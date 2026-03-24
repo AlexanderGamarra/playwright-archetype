@@ -1,7 +1,7 @@
 
 # Hi, I'm Alexander! 👋
 
-This project is an automation framework for running automated tests of APIs and Web Pages
+This project is an automation framework for running automated tests of APIs and Web Pages using Playwright
 ## Features
 
 The following features are automated in the framework
@@ -29,7 +29,9 @@ Project
     
 ## Deployment
 
-To deploy this project go to the Testing option in VSCode, next select and execute specific tests cases. If you want to see playwright ui execution use this command in console:
+To deploy this project go to the Testing option in VSCode and select specific tests cases. 
+
+If you want to execute some test in playwright ui, please use the follow command in the console:
 
 ```bash
   npx playwright test --ui
