@@ -4,10 +4,12 @@
 This project is an automation framework for running automated tests of APIs and Web Pages
 ## Features
 
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+The following features are automated in the framework
+- Modals
+- Forms
+- Alerts
+- Dialogs
+- Drag and drop action
 
 
 ## Installation
@@ -39,5 +41,5 @@ To deploy this project go to the Testing option in VSCode, next select and execu
 
 ## Support
 
-For support, email agamarrat@outlook.com or
+For support, email agamarrat@outlook.com
 
