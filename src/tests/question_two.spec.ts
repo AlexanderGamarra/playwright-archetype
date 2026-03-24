@@ -4,7 +4,7 @@ import {writeAndselectValue} from '../utils/util.js'
 const SELECT_VALUE = 'Group 1, option 1'
 const SELECT_ONE_VALUE = 'Mr.'
 
-test("Menu Validations", async({page}) => {
+test("Verify Menu Validations", async({page}) => {
     await page.goto("/select-menu")
     await expect(page.getByRole('heading', { name: 'Select Menu' })).toBeVisible()
 

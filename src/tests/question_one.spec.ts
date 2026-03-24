@@ -20,7 +20,7 @@
  const STATE = "NCR"
  const CITY = "Delhi"
 
- test("Fill Form", async({page}) => {
+ test("Verify Fill Form", async({page}) => {
     await page.goto("/automation-practice-form")
     await expect(page.getByRole('heading', { name: 'Practice Form' })).toBeVisible()
 

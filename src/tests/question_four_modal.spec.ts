@@ -3,7 +3,7 @@
 const MODAl_1 = { title: 'Small Modal', description: 'This is a small modal. It has very less content'}
 const MODAl_2 = { title: 'Large Modal', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'}
 
-test("Very Modal Dialogs", async({page}) => {
+test("Verify Modal Dialogs", async({page}) => {
     await page.goto("/modal-dialogs")
     await expect(page.getByRole('heading', { name: 'Modal Dialogs' })).toBeVisible()
     await expect(page.getByText('Click on button to see modal')).toBeVisible()

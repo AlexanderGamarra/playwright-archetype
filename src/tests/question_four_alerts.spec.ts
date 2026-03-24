@@ -6,13 +6,13 @@ test.beforeEach(async ({ page }) => {
     await expect(page.getByRole('heading', { name: 'Alerts' })).toBeVisible()
 });
 
-test("Very Alert Button", async({page}) => {
+test("Verify Alert Button", async({page}) => {
     await expect(page.getByText('Click Button to see alert')).toBeVisible()
     await page.locator('#alertButton').click()
     await verifyAlert(page, 'You clicked a button')
 })
 
-test("Very Timer Alert ", async({page}) => {
+test("Verify Timer Alert ", async({page}) => {
     await expect(page.getByText('On button click, alert will appear after 5 seconds')).toBeVisible()
     await page.locator('#timerAlertButton').click()
     await verifyAlert(page, 'This alert appeared after 5 seconds')
