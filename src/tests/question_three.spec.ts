@@ -9,7 +9,7 @@
  const DEPARTMENT = "Lima"
 
  test("Verify Web Tables", async({page}) => {
-    await page.goto("https://demoqa.com/webtables")
+    await page.goto("/webtables")
     await expect(page.getByRole('heading', { name: 'Web Tables' })).toBeVisible()
  
     //Add row

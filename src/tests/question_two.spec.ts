@@ -5,7 +5,7 @@ const SELECT_VALUE = 'Group 1, option 1'
 const SELECT_ONE_VALUE = 'Mr.'
 
 test("Menu Validations", async({page}) => {
-    await page.goto("https://demoqa.com/select-menu")
+    await page.goto("/select-menu")
     await expect(page.getByRole('heading', { name: 'Select Menu' })).toBeVisible()
 
     await writeAndselectValue(page, '#react-select-2-input', SELECT_VALUE) 

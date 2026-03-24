@@ -21,7 +21,7 @@
  const CITY = "Delhi"
 
  test("Fill Form", async({page}) => {
-    await page.goto("https://demoqa.com/automation-practice-form")
+    await page.goto("/automation-practice-form")
     await expect(page.getByRole('heading', { name: 'Practice Form' })).toBeVisible()
 
     await page.locator("xpath=//*[@id=\"firstName\"]").fill(FIRST_NAME)
